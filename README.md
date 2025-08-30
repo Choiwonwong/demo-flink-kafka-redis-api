@@ -67,7 +67,7 @@ Follow these steps to get the entire pipeline running on your local machine.
 This command starts Kafka, Zookeeper, Flink (JobManager & TaskManager), and Redis.
 
 ```bash
-docker-compose up -d
+./scripts/setup.sh
 ```
 
 ### Step 2: Deploy the Flink Job
@@ -129,9 +129,6 @@ HGETALL ctr:previous
 Use the provided scripts to stop the different parts of the application.
 
 ```bash
-# Stop the Serving API container
-docker-compose stop serving-api
-
 # Stop the data producers
 ./scripts/stop-producers.sh
 

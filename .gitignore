@@ -1,0 +1,50 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+build/
+*.jar
+*.class
+
+# Python
+.python-version
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+logs/
+
+producers/.venv/
+producers/__pycache__/
+
+# IDE specific
+.vscode/
+
+# Python specific
+.pytest_cache/
+.mypy_cache/
+htmlcov/
+.coverage
+
+# Temporary files
+tmp/
+*.swp
+*~
+
+# OS specific
+.DS_Store
+
+# Docker
+# No specific Docker ignores needed based on the provided structure,
+# as docker-compose.yml is usually tracked.

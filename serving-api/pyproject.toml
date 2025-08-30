@@ -1,0 +1,13 @@
+[project]
+name = "serving-api"
+version = "0.1.0"
+description = "A FastAPI API to serve CTR data."
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "redis",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

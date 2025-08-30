@@ -1,4 +1,4 @@
-# Real-time CTR Calculation Pipeline
+# (Demo)Real-time CTR Calculation Pipeline
 
 This project demonstrates a complete, real-time data pipeline for calculating Click-Through-Rate (CTR) from streaming impression and click events. The pipeline is built using Kafka, Flink, and Redis, and includes a FastAPI backend to serve the results.
 

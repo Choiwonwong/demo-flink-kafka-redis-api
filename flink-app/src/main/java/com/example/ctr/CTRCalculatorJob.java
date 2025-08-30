@@ -53,7 +53,7 @@ public class CTRCalculatorJob {
                 .build();
 
         WatermarkStrategy<Event> watermarkStrategy = WatermarkStrategy
-                .<Event>forBoundedOutOfOrderness(Duration.ofSeconds(3))
+                .<Event>forBoundedOutOfOrderness(Duration.ofSeconds(2))
                 .withTimestampAssigner(new EventTimestampExtractor());
 
         DataStream<Event> impressionStream = env

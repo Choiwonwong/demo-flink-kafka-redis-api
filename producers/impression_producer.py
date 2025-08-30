@@ -51,7 +51,7 @@ class ImpressionProducer:
                 # Log the sent event
                 print(f"[{datetime.now().strftime('%H:%M:%S')}] Sent impression: {event['user_id']} -> {event['product_id']}")
                 
-                time.sleep(0.1)  # 0.25초마다 전송 (기존 2배 증가)
+                time.sleep(0.001)  # 0.25초마다 전송 (기존 2배 증가)
                 
         except KeyboardInterrupt:
             print("\nStopping impression producer...")

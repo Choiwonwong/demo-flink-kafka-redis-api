@@ -68,7 +68,7 @@ class ClickProducer:
                 else:
                     print(f"[{datetime.now().strftime('%H:%M:%S')}] No click generated")
                 
-                time.sleep(0.15)  # 0.5초마다 시도 (기존 2배 증가)
+                time.sleep(0.002)  # 0.5초마다 시도 (기존 2배 증가)
                 
         except KeyboardInterrupt:
             print("\nStopping click producer...")
